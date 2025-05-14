@@ -3,6 +3,26 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: #333;
+}
+/* body{
+    background-image: url(IMG/IMG-20250507-WA0079-removebg-preview.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;  
+    margin: 0;
+} */
+.content{
+    margin: auto; 
+}
+.bg{
+    background-image: url(IMG/IMG-20250507-WA0079-removebg-preview.png); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+} 
 }
 body{
      background-image: url(IMG/img_mountains.jpg);
@@ -33,6 +53,11 @@ div{
 }
 
 .intro{
+    width: 100%;
+    padding: 40px;
+    line-height: 2;
+    text-wrap: wrap;
+    word-wrap: break-word;
     width: 90%;
     padding: 50px;
     line-height: 2;
@@ -59,15 +84,21 @@ h3{
 #next{
     display: none;
     margin-top: 20px;
+    padding: 20px;
+
+
 }
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+    margin: 80px;
     margin: 40px;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0);
 }
 .flex-container > div {
+    background-color:rgba(0, 255, 106, 0.226);
+
     background-color:  rgba(165, 42, 42, 0.5);
     width: calc(33.33% - 40px); 
     margin: 8px;
@@ -79,6 +110,91 @@ h3{
   }
   button{
     padding: 5px;
+    color: green;
+    background-color: white
+  }
+button.btn:hover{
+    cursor: pointer;
+
+}
+.flex-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.flex-container1 > div {
+   background-color: rgba(0, 255, 106, 0.226);
+   height: 280px;
+   margin: 8px;
+   text-align: center;
+   line-height: 1;
+   font-size: small;
+   border-radius: 8px;
+
+   
+
+   button{
+    padding: 10px;
+    box-shadow: none;
+    
+   }
+   
+}
+.about{
+    background-image: url(IMG/IMG-20250507-WA0082-removebg-preview.png), url(IMG/IMG-20250507-WA0081-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+    background-size: 100px;
+}
+flex-container2{
+    display: flex;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.p{ 
+    width: 40px;
+    line-height: 1.8;
+    text-wrap: wrap; 
+    font-weight: bold;
+    color: #333;
+    flex: 1;
+    margin-right: 70px;
+
+} 
+
+.form{
+    display: flex; 
+    align-items: flex-start; 
+    background: url(IMG/IMG-20250507-WA0083-removebg-preview.png), url(IMG/IMG-20250507-WA0085-removebg-preview.png),
+     url(IMG/IMG-20250507-WA0084-removebg-preview.png);
+     background-repeat: no-repeat;
+     background-position: left bottom,right bottom, center bottom;
+     background-size: 100px;
+
+    button{
+        padding: 5px;
+        color: green;
+        background-color: white;
+        justify-content: left;
+      }
+    button.btn1:hover{
+        cursor: pointer;
+        color: darkgreen;
+    }   }
+footer{
+    .icons i{
+        margin-left: 10px;
+    }
+    .icons i:hover{
+        font-size: larger;
+        cursor: pointer;
+    }
+}
     background-color: bisque;
   }
 button.btn:hover{
@@ -112,5 +228,6 @@ button.btn:hover{
     .flex-container>div{
         width: calc(33.33% - 20px);
     }
+} 
 } 
 
